@@ -1,10 +1,13 @@
 {
+  "homepage": "https://mythilyarasu.github.io/smart-brain-api",
   "name": "smart-brain-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon server.js"
+    "start:dev": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
